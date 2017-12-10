@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3E50">
+
+    <LinearLayout
+        android:id="@+id/currency_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/bitcoin_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/bitcoin_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/bitcoin" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/scoin_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/scoin_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/scoin" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/amount_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currency_container"
+        android:layout_marginTop="96dp"
+        android:gravity="center"
+        android:text="Coin Amount"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/amount_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amount_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/default_value"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/win_rate_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amount_et"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Probability of Winning"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/win_rate_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/win_rate_description"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Your Chance"
+        android:textColor="#F89406"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/win_amount_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/win_rate_tv"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Amount you would win"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/win_amount_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/win_amount_description"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="0.0$"
+        android:textColor="#00e640"
+        android:textSize="24sp" />
+
+</RelativeLayout>
