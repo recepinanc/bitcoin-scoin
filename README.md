@@ -9,6 +9,8 @@ In this app 2 different APIs are consumed to present data to user.
 SCoin data is retrieved from https://devakademi.sahibinden.com/ticker
 and Bitcoin data is retrieved from https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCUSD.
 
+Scoin and Bitcoin screens are changing on swipe gesture.
+
 User's decisions and the last data are saved in the internal memory of the mobile device, and is cached.
 
 # Libraries
